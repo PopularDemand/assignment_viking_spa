@@ -1,5 +1,9 @@
 var spa = angular.module('spa', ['ui.router']);
 
+spa.factory('_', ['$window', function($window) {
+  return $window._;
+}]);
+
 spa.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/products');
 
@@ -9,4 +13,4 @@ spa.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'js/templates/productsIndex.html',
       controller: 'ProductsCtrl'
     });
-})
+});
