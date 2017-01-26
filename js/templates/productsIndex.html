@@ -1,11 +1,4 @@
-<div class="full-width">
-  <div class="hero">
-    <div class="name">The Viking Store</div>
-  </div>
-  <div class="sidekick-1">The Best Viking Gear on the Whole Web</div>
-  <div class="sidekick-2">Choose from among our lineup of fine axes below</div>
-</div>
-  <select ng-model='filteredCategory' ng-options='category.name for category in categories' id='category-dropdown'></select>
+<select ng-model='filteredCategory' ng-options='category.name for category in categories' id='category-dropdown'></select>
 <div class="item-grid main-column">
   <div class="item-cell silent-night" ng-repeat="product in products | categoryFilter: filteredCategory ">
     <div class="item-title">{{ product.name }}</div>
@@ -17,14 +10,4 @@
       <button>Add to Cart</button>
     </div>
   </div>
-  <!-- <div class="pagination">
-    <a href="#!">&lt;&lt; Prev</a>
-    <a href="#!">1</a>
-    <strong>2</strong>
-    <a href="#!">3</a>
-    . . .
-    <a href="#!">8</a>
-    <a href="#!">9</a>
-    <a href="#!">Next &gt;&gt;</a>
-  </div> -->
 </div>

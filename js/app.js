@@ -10,7 +10,17 @@ spa.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('products', {
       url: '/products',
+      abstract: true,
+      template: '<h1>Products</h1><ui-view></ui-view>'
+    })
+    .state('products.index', {
+      url: '',
       templateUrl: 'js/templates/productsIndex.html',
+      controller: 'ProductsCtrl',
+    })
+    .state('products.show', {
+      url: '/:productId',
+      templateUrl: 'js/templates/productShow.html',
       controller: 'ProductsCtrl'
     });
 });
