@@ -91,6 +91,12 @@ header {
   width: 3.5em;
   float: right;
 }
+.item-category {
+  border: 1px solid black;
+  background-color: white;
+  width: 3.5em;
+  float: left;
+}
 .purchasing {
   padding: .5em;
 }

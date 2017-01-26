@@ -13,18 +13,51 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
   };
 
   var _populateProducts = function() {
-    for (var i = 0; i < 7; i++) {
-      _createProduct();
+    for (var i = 0; i < 6; i++) {
+      _createShip();
+    }
+    for (var j = 0; j < 3; j++) {
+      _createAxe();
+    }
+    for (var k = 0; k < 5; k++) {
+      _createHelmet();
     }
   };
 
-  var _createProduct = function() {
+  var _createShip = function() {
     var product = {
       id: _id,
       name: _.capitalize(faker.hacker.ingverb()) + ' ' + _.capitalize(faker.hacker.noun()),
       image: faker.image.transport(),
       price: faker.finance.amount(),
-      description: faker.hacker.phrase()
+      description: faker.hacker.phrase(),
+      category: "Ship",
+    };
+    _id++;
+    _products.push(product);
+  };
+
+  var _createAxe = function() {
+    var product = {
+      id: _id,
+      name: _.capitalize(faker.commerce.productName()),
+      image: faker.image.abstract(),
+      price: faker.finance.amount(),
+      description: faker.company.catchPhrase(),
+      category: "Axe",
+    };
+    _id++;
+    _products.push(product);
+  };
+
+  var _createHelmet = function() {
+    var product = {
+      id: _id,
+      name: _.capitalize(faker.company.catchPhrase()),
+      image: faker.image.image(),
+      price: faker.finance.amount(),
+      description: faker.company.catchPhrase(),
+      category: "Helmet",
     };
     _id++;
     _products.push(product);
