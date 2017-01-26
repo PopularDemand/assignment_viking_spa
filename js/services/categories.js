@@ -3,7 +3,8 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
   var _id = 1;
 
   var getAll = function() {
-    if (!_categories.length) { _populateCategories() }
+    if (!_categories.length) { 
+      _populateCategories() }
     return _categories;
   };
 
@@ -12,7 +13,7 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
       {
         "name": "Axes",
         "id": 1,
-        ,"productIds": [7,8,9]
+        "productIds": [7,8,9]
       }, {
         "name": "Ships",
         "id": 2,
@@ -26,7 +27,7 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
     categories.forEach(function(category) {
       _extend(category);
     });
-    return categories;
+    _categories =  categories;
   }
 
   var _extend = function(category) {

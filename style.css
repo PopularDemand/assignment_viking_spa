@@ -85,6 +85,12 @@ header {
 .item-cell.whispering-wind .item-image { background-image: url(img/axe_whispering_wind_small.jpg) }
 .item-cell.cunning-cutter .item-image { background-image: url(img/axe_cunning_cutter_small.jpg) }
 .item-cell.kingmaker .item-image { background-image: url(img/axe_kingmaker_small.jpg) }*/
+#category-dropdown {
+  display: inline-block;
+  float: right;
+  clear: both;
+}
+
 .item-price {
   border: 1px solid black;
   background-color: white;
