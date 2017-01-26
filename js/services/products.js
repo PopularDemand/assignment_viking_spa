@@ -39,7 +39,7 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
       image: faker.image.transport(),
       price: faker.finance.amount(),
       description: faker.hacker.phrase(),
-      category: 1,
+      category: 2,
     };
     _id++;
     _products.push(product);
@@ -52,7 +52,7 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
       image: faker.image.abstract(),
       price: faker.finance.amount(),
       description: faker.company.catchPhrase(),
-      category: 2,
+      category: 1,
     };
     _id++;
     _products.push(product);

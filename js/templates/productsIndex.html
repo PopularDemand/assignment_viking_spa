@@ -7,11 +7,11 @@
 </div>
   <select ng-model='filteredCategory' ng-options='category.name for category in categories' id='category-dropdown'></select>
 <div class="item-grid main-column">
-  <div class="item-cell silent-night" ng-repeat="product in products">
+  <div class="item-cell silent-night" ng-repeat="product in products | categoryFilter: filteredCategory ">
     <div class="item-title">{{ product.name }}</div>
     <div class="item-image" style="background-image: url({{ product.image }})">
       <div class="item-price">{{ product.price | currency }}</div>
-      <div class="item-category">{{ product.category }}</div>
+      <div class="item-category">{{ find(product.category).name }}</div>
     </div>
     <div class="purchasing">
       <button>Add to Cart</button>

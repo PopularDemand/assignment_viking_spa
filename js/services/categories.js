@@ -3,8 +3,8 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
   var _id = 1;
 
   var getAll = function() {
-    if (!_categories.length) { 
-      _populateCategories() }
+    if (!_categories.length) {
+      _populateCategories(); }
     return _categories;
   };
 
@@ -23,12 +23,12 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
         "id": 3,
         "productIds": [10,11,12,13,14]
       }
-    ]
+    ];
     categories.forEach(function(category) {
       _extend(category);
     });
     _categories =  categories;
-  }
+  };
 
   var _extend = function(category) {
     category.products = function() {
@@ -36,12 +36,21 @@ spa.factory('categoriesService', ['productsService', function(productsService) {
       this.productIds.forEach(function(productId) {
         var product = productService.find(productId);
         products.push(product);
-      })
-      return products
+      });
+      return products;
     };
+  };
+
+  var find = function(id) {
+    for (var i = 0; i < _categories.length; i++) {
+      if (_categories[i].id === id) {
+        return _categories[i];
+      }
+    }
   };
 
   return {
     getAll: getAll,
-  }
+    find: find,
+  };
 }]);
