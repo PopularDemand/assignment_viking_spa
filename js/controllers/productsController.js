@@ -3,4 +3,6 @@ spa.controller('ProductsCtrl', ['$scope', 'productsService', function($scope, pr
   productsService.getAll().then(function(products) {
     $scope.products = products;
   });
+
+  productsService._fetchOne().then(console.log)
 }]);
