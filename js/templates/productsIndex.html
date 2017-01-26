@@ -6,6 +6,7 @@
   <div class="sidekick-2">Choose from among our lineup of fine axes below</div>
 </div>
 <div class="item-grid main-column">
+  {{ categories }}
   <div class="item-cell silent-night" ng-repeat="product in products">
     <div class="item-title">{{ product.name }}</div>
     <div class="item-image" style="background-image: url({{ product.image }})">

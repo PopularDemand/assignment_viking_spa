@@ -12,6 +12,14 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
     // });
   };
 
+  var find = function(id) {
+    for (var i = 0; i < _products.length; i++) {
+      if (_products[i].id === id) {
+        return _products[i];
+      }
+    }
+  }
+
   var _populateProducts = function() {
     for (var i = 0; i < 6; i++) {
       _createShip();
@@ -65,5 +73,6 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
 
   return {
     getAll: getAll,
+    find: find,
   };
 }]);
