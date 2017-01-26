@@ -1,3 +1,6 @@
-spa.controller('ProductsCtrl', ['$scope', function($scope) {
-  $scope.words = 'these are words';
-}])
+spa.controller('ProductsCtrl', ['$scope', 'productsService', function($scope, productsService) {
+  $scope.products = [];
+  productsService.getAll().then(function(products) {
+    $scope.products = products;
+  });
+}]);

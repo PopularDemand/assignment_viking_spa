@@ -8,5 +8,5 @@ spa.config(function($stateProvider, $urlRouterProvider) {
       url: '/products',
       templateUrl: 'js/templates/productsIndex.html',
       controller: 'ProductsCtrl'
-    })
+    });
 })
