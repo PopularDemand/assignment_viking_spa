@@ -1,3 +1,5 @@
 <h1>Show product</h1>
-{{ $stateParams }}
-<product product='product' find="find(id)"></product>
+<div class="show-page">
+  <product product='product' find="find(id)"></product>
+  <p class="text-center">{{product.description}}</p>
+</div>
