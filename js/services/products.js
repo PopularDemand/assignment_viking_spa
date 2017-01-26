@@ -31,7 +31,7 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
       image: faker.image.transport(),
       price: faker.finance.amount(),
       description: faker.hacker.phrase(),
-      category: "Ship",
+      category: 1,
     };
     _id++;
     _products.push(product);
@@ -44,7 +44,7 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
       image: faker.image.abstract(),
       price: faker.finance.amount(),
       description: faker.company.catchPhrase(),
-      category: "Axe",
+      category: 2,
     };
     _id++;
     _products.push(product);
@@ -57,7 +57,7 @@ spa.factory('productsService', ['$http', '$q', '_', function($http, $q, _) {
       image: faker.image.image(),
       price: faker.finance.amount(),
       description: faker.company.catchPhrase(),
-      category: "Helmet",
+      category: 3,
     };
     _id++;
     _products.push(product);
