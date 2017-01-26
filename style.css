@@ -79,12 +79,12 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-.item-cell.silent-night .item-image { background-image: url(img/axe_silent_night_small.jpg) }
+/*.item-cell.silent-night .item-image { background-image: url(img/axe_silent_night_small.jpg) }
 .item-cell.dainty-daisy .item-image { background-image: url(img/axe_dainty_daisy_small.jpg) }
 .item-cell.double-trouble .item-image { background-image: url(img/axe_double_trouble_small.jpg) }
 .item-cell.whispering-wind .item-image { background-image: url(img/axe_whispering_wind_small.jpg) }
 .item-cell.cunning-cutter .item-image { background-image: url(img/axe_cunning_cutter_small.jpg) }
-.item-cell.kingmaker .item-image { background-image: url(img/axe_kingmaker_small.jpg) }
+.item-cell.kingmaker .item-image { background-image: url(img/axe_kingmaker_small.jpg) }*/
 .item-price {
   border: 1px solid black;
   background-color: white;

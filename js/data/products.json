@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "The Silent Night",
+    "price": 200,
+    "image": "img/axe_silent_night_small.jpg"
+  },
+  {
+    "id": 2,
+    "name": "The Dainty Daisy",
+    "price": 100,
+    "image": "img/axe_dainty_daisy_small.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Double Trouble",
+    "price": 340,
+    "image": "img/axe_double_trouble_small.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Whispering Wind",
+    "price": 225,
+    "image": "img/axe_whispering_wind_small.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Cunning Cutter",
+    "price": 200,
+    "image": "img/axe_cunning_cutter_small.jpg"
+  },
+  {
+    "id": 6,
+    "name": "The Kingmaker",
+    "price": 400,
+    "image": "img/axe_kingmaker_small.jpg"
+  }
+]
