@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Axes",
+    "id": 1,
+    "productIds": [1,2,3,4,5,6]
+  }, {
+    "name": "Longboats",
+    "id": 2,
+    "productIds": []
+  }, {
+    "name": "Helmets",
+    "id": 3,
+    "productIds": []
+  }
+]
