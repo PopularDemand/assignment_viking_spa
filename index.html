@@ -1,98 +1,104 @@
+<html ng-app="spa">
 <head>
   <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+  <script src="app.js"></script>
 </head>
-<header>
-  <div class="main-column">
-    <strong>Viking Store</strong>
-    <div class="cart">
-      <img src="img/icon_empty_cart.png" width="50" alt="">
-      <div>Your Cart</div>
+<body>
+  <header>
+    <div class="main-column">
+      <strong>Viking Store</strong>
+      <div class="cart">
+        <img src="img/icon_empty_cart.png" width="50" alt="">
+        <div>Your Cart</div>
+      </div>
+    </div>
+  </header>
+  <div class="full-width">
+    <div class="hero">
+      <div class="name">The Viking Store</div>
+    </div>
+    <div class="sidekick-1">The Best Viking Gear on the Whole Web</div>
+    <div class="sidekick-2">Choose from among our lineup of fine axes below</div>
+  </div>
+  <div class="item-grid main-column">
+    <div class="item-cell silent-night">
+      <div class="item-title">The Silent Night</div>
+      <div class="item-image">
+        <div class="item-price">$200</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="item-cell dainty-daisy">
+      <div class="item-title">The Dainty Daisy</div>
+      <div class="item-image">
+        <div class="item-price">$100</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="item-cell double-trouble">
+      <div class="item-title">Double Trouble</div>
+      <div class="item-image">
+        <div class="item-price">$340</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="item-cell whispering-wind">
+      <div class="item-title">Whispering Wind</div>
+      <div class="item-image">
+        <div class="item-price">$225</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="item-cell cunning-cutter">
+      <div class="item-title">The Cunning Cutter</div>
+      <div class="item-image">
+        <div class="item-price">$200</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="item-cell kingmaker">
+      <div class="item-title">The Kingmaker</div>
+      <div class="item-image">
+        <div class="item-price">$400</div>
+      </div>
+      <div class="purchasing">
+        <button>Add to Cart</button>
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#!">&lt;&lt; Prev</a>
+      <a href="#!">1</a>
+      <strong>2</strong>
+      <a href="#!">3</a>
+      . . .
+      <a href="#!">8</a>
+      <a href="#!">9</a>
+      <a href="#!">Next &gt;&gt;</a>
     </div>
   </div>
-</header>
-<div class="full-width">
-  <div class="hero">
-    <div class="name">The Viking Store</div>
-  </div>
-  <div class="sidekick-1">The Best Viking Gear on the Whole Web</div>
-  <div class="sidekick-2">Choose from among our lineup of fine axes below</div>
-</div>
-<div class="item-grid main-column">
-  <div class="item-cell silent-night">
-    <div class="item-title">The Silent Night</div>
-    <div class="item-image">
-      <div class="item-price">$200</div>
+  <footer>
+    <div class="contact">
+      <div class="contact-header">CONTACT</div>
+      <div class="contact-detail">
+        <div class="icon"><img src="img/icon_phone_white.png" alt="Phone"></div>
+        <span class="text">1-000-000-0000</span>
+      </div>
+      <div class="contact-detail">
+        <div class="icon"><img src="img/email_white.png" alt="Email"></div>
+        <span class="text">contact@vikingstore.com</span>
+      </div>
     </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="item-cell dainty-daisy">
-    <div class="item-title">The Dainty Daisy</div>
-    <div class="item-image">
-      <div class="item-price">$100</div>
-    </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="item-cell double-trouble">
-    <div class="item-title">Double Trouble</div>
-    <div class="item-image">
-      <div class="item-price">$340</div>
-    </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="item-cell whispering-wind">
-    <div class="item-title">Whispering Wind</div>
-    <div class="item-image">
-      <div class="item-price">$225</div>
-    </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="item-cell cunning-cutter">
-    <div class="item-title">The Cunning Cutter</div>
-    <div class="item-image">
-      <div class="item-price">$200</div>
-    </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="item-cell kingmaker">
-    <div class="item-title">The Kingmaker</div>
-    <div class="item-image">
-      <div class="item-price">$400</div>
-    </div>
-    <div class="purchasing">
-      <button>Add to Cart</button>
-    </div>
-  </div>
-  <div class="pagination">
-    <a href="#!">&lt;&lt; Prev</a>
-    <a href="#!">1</a>
-    <strong>2</strong>
-    <a href="#!">3</a>
-    . . .
-    <a href="#!">8</a>
-    <a href="#!">9</a>
-    <a href="#!">Next &gt;&gt;</a>
-  </div>
-</div>
-<footer>
-  <div class="contact">
-    <div class="contact-header">CONTACT</div>
-    <div class="contact-detail">
-      <div class="icon"><img src="img/icon_phone_white.png" alt="Phone"></div>
-      <span class="text">1-000-000-0000</span>
-    </div>
-    <div class="contact-detail">
-      <div class="icon"><img src="img/email_white.png" alt="Email"></div>
-      <span class="text">contact@vikingstore.com</span>
-    </div>
-  </div>
-</footer>
+  </footer>
+</body>
