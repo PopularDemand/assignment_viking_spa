@@ -4,11 +4,10 @@ spa.directive('product', function() {
     restrict: 'E',
     scope: {
       product: '=',
-      quantity: '@',
       find: '&',
       addItem: '&',
     },
-    link: function() {
+    link: function(scope) {
       scope.quantity = 1;
     }
   };
