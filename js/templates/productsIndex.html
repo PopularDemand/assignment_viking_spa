@@ -1,5 +1,6 @@
 <select ng-model='filteredCategory' ng-options='category.name for category in categories' id='category-dropdown'></select>
+{{ cart }}
 <div class="item-grid main-column">
-  <product ng-repeat="product in products | categoryFilter: filteredCategory" product="product" find="find(id)">
+  <product ng-repeat="product in products | categoryFilter: filteredCategory" product="product" find="find(id)" quantity='{{ quantity }}' add-item="addItem(item, quantity)">
   </product>
 </div>

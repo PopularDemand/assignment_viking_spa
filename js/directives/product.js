@@ -4,7 +4,12 @@ spa.directive('product', function() {
     restrict: 'E',
     scope: {
       product: '=',
-      find: '&'
+      quantity: '@',
+      find: '&',
+      addItem: '&',
+    },
+    link: function() {
+      scope.quantity = 1;
     }
   };
 });

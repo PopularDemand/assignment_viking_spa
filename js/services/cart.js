@@ -12,7 +12,20 @@ spa.factory('cartService', [function() {
       item: item,
       quantity: quantity
     });
+    console.log('within add item', _products)
   };
+
+  var removeItem = function(item) {
+    for (var i = 0; i < _products.length; i++) {
+      if (_products[i] === item) {
+        return _products.splice(i, 1);
+      }
+    }
+  };
+
+  var listAll = function() {
+    return _products;
+  }
 
   return {
     listAll: listAll,

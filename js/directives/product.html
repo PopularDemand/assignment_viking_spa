@@ -3,5 +3,6 @@
   <div class="item-category">{{ find({id: product.category}).name }}</div>
 </div>
 <div class="purchasing">
-   <input type="number" class="quantity"> <button>Add to Cart</button>
+   <input type="number" class="quantity" ng-model='quantity'>
+   <button ng-click='addItem({item: product, quantity: quantity})'>Add to Cart</button>
 </div>
