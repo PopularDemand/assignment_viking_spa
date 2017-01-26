@@ -1,4 +1,4 @@
-spa.controller('ProductsCtrl', ['$scope', 'productsService', 'categoriesService', function($scope, productsService, categoriesService) {
+spa.controller('ProductsCtrl', ['$scope', '$stateParams', 'productsService', 'categoriesService', function($scope, $stateParams, productsService, categoriesService) {
 
   $scope.products = productsService.getAll();
   $scope.categories = categoriesService.getAll();
@@ -11,4 +11,10 @@ spa.controller('ProductsCtrl', ['$scope', 'productsService', 'categoriesService'
     }
   };
 
+  if ($stateParams.productId) {
+    console.log($stateParams)
+    $scope.product = productsService.find($stateParams.productId);
+    console.log($scope.product)
+  }
+  
 }]);

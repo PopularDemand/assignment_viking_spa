@@ -60,7 +60,7 @@ header {
   flex-wrap: wrap;
   padding: 1em;
 }
-.item-cell {
+product {
   width: 30%;
   background-color: hsl(0, 20%, 15%);
   text-align: center;
